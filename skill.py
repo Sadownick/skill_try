@@ -11,16 +11,11 @@ class Human:
 
 
 class User(Human):
-
     __passport: str = "1234 123123"
 
     def hello(self):
-        print(f'Hello, {self.first_name}!')
+        print(f'Hello, {self.first_name} {self.last_name}!')
 
 
-john = User('John', 'Doe')
-# john.hello()
-artur = User('Artur')
-# artur.hello()
-
-# print(john._User__passport)
+john = Human('John', 'Doe')
+artur = Human('Artur')
